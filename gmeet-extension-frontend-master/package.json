@@ -1,0 +1,63 @@
+{
+  "name": "create-react-extension-app",
+  "version": "1.1.4",
+  "description": "Start building an extension right-away",
+  "author": "Shivansh Verma",
+  "bin": "./bin/cli.js",
+  "license": "MIT",
+  "keywords": [
+    "create-react-extension-app",
+    "extension app",
+    "react extension app",
+    "starter files for react extension",
+    "extension manifest v3"
+  ],
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/user-event": "^13.2.1",
+    "axios": "^0.21.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "sass": "^1.42.1",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.3.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set \"INLINE_RUNTIME_CHUNK=false\" && craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "env": {
+      "webextensions": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivanshVerma-coder/cra-for-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShivanshVerma-coder/cra-for-extension/issues"
+  }
+}

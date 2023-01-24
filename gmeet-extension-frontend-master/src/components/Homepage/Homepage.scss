@@ -1,0 +1,91 @@
+$gray: #faf5f3;
+$gray-lt: lighten($gray, 10%);
+$gray-dk: darken($gray, 10%);
+$green: #7aada5;
+$green-lt: lighten($green, 10%);
+$green-dk: darken($green, 10%);
+
+.homepage {
+  // background-size: cover;
+  // background-image: -webkit-linear-gradient(
+  //   0deg,
+  //   rgb(94, 44, 237) 0%,
+  //   rgb(164, 133, 253) 100%
+  // );
+  // font-family: "Lato", sans-serif;
+  // min-height: 100vh;
+
+  background-size: cover;
+  //     background-image: -webkit-linear-gradient(
+  // 0deg,#5e2ced,#a485fd);
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background-color: #55efc4;
+  background-image: linear-gradient(315deg, #55efc4 0%, #000000 74%);
+}
+
+form {
+  background: $gray;
+  z-index: 10;
+  padding: 40px 60px 80px;
+  margin: 14% auto;
+  opacity: 0.85;
+  border-radius: 20px;
+  max-height: 335px;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: darken(#4e3332, 10%);
+    letter-spacing: 0.061em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    background: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid $gray-dk;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+
+    letter-spacing: 0.06em;
+    &:focus {
+      border: 1px solid $gray-dk;
+      outline: none;
+      appearance: none;
+    }
+  }
+  .submit {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    position: relative;
+    z-index: 500;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    background: #ec7242;
+    color: #fff;
+    width: 101%;
+    transition: 0.8s all ease;
+    &:hover {
+      background: #d6673c;
+      transform: translateY(1px);
+      transition: 0.4s all ease;
+    }
+  }
+}

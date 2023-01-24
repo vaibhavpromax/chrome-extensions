@@ -1,0 +1,34 @@
+.sidebar {
+  // background: linear-gradient(48.95deg, #40e0cf 0%, #36cdcf 67.11%);
+  background: linear-gradient(48.95deg, #4dcdc0, #024e50 67.11%);
+
+  width: 45px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 1rem;
+  div {
+    cursor: pointer;
+  }
+  .logo {
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+  .active {
+    svg {
+      color: #2d5380;
+    }
+  }
+}

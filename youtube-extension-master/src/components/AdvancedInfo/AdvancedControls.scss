@@ -1,0 +1,44 @@
+.advanced-controls {
+  z-index: 3;
+  background-color: #292a2e;
+  .content {
+    display: flex;
+    // justify-content: space-evenly;
+    padding: 8px;
+    .title {
+      // flex: 0.6;
+      display: flex;
+      align-items: center;
+    }
+    .speed-count {
+      display: flex;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 2px 10px;
+      background-color: whitesmoke;
+      color: black;
+      font-size: 16px;
+      margin: 0 10px;
+      width: 10%;
+      justify-content: center;
+    }
+    .controls {
+      display: flex;
+      .custom-btn {
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 5px;
+        // border: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 6px 12px;
+      }
+    }
+  }
+}
+
+.advanced-controls * {
+  z-index: 3;
+}

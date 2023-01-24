@@ -1,0 +1,20 @@
+.stats {
+  background-color: #292a2e;
+  padding-bottom: 8px;
+
+  .content {
+    display: flex;
+    .playlist-btn {
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .playlist-time {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      font-size: 17px;
+    }
+  }
+}

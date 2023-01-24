@@ -1,0 +1,25 @@
+{
+  "name": "Gmeet Poling Extension",
+  "description": "Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Open the popup"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "tabs", "storage", "scripting", "cookies"],
+  "host_permissions": ["https://www.linked.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["./static/js/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "extensionLogo2.png",
+    "48": "extensionLogo2.png",
+    "128": "extensionLogo2.png"
+  }
+}

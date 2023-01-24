@@ -1,0 +1,41 @@
+.create-poll {
+  margin: 10px;
+
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    color: midnightblue;
+  }
+
+  .form-control-alternative {
+    margin-bottom: 20px !important;
+    width: 95%;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02) !important;
+    //   border: 0 !important;
+    transition: box-shadow 0.15s ease !important;
+
+    &:focus {
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+        0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    }
+  }
+
+  button {
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background-color 400ms ease;
+  }
+
+  button.create {
+    color: #fff;
+    background-color: #5e72e4;
+  }
+
+  button.create:hover {
+    background-color: #4a63f1;
+  }
+}
